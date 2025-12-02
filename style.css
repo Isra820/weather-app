@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pngtree-weather.png") ;
+    background-size: cover;       /* couvre toute la page */
+    background-repeat: no-repeat; /* pas de répétition */
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1); /* transparence */
+    backdrop-filter: blur(10px); /* effet flou */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1.2s ease forwards;
+    transform: translateY(20px);
+    opacity: 0;
+}
+@keyframes fadeIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+h1 {
+    color: #0973ba;
+    margin-bottom: 20px;
+}
+input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #2c73a9;
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+img {
+    width: 100px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(3, 59, 132);
+}
+

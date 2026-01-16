@@ -1,20 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("pngtree-weather.png") ;
-    background-size: cover;       /* couvre toute la page */
-    background-repeat: no-repeat; /* pas de répétition */
-    background-position: center; 
+    background: linear-gradient(135deg, #f2b880, #f08a5d);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+/* Container */
 .container {
     width: 400px;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.1); /* transparence */
-    backdrop-filter: blur(10px); /* effet flou */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -22,24 +20,38 @@ body {
     transform: translateY(20px);
     opacity: 0;
 }
+
 @keyframes fadeIn {
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
+/* Title */
 h1 {
-    color: #0973ba;
-    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: rgb(36, 74, 123);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* Form */
 input {
     width: 60%;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(249, 225, 194);
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Button */
 button {
-    background: #2c73a9;
+    background: #114a75;
     border: none;
     color: white;
     padding: 12px 25px;
@@ -47,35 +59,27 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-img {
-    width: 100px;
-}
-
-h2 {
-    margin: 10px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
 }
 
 button:hover {
     transform: scale(1.08);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 }
 
+/* Result */
 #result {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 20px;
     color: #333;
 }
 
-h1{
-    font-size: 50px;
-    margin-bottom: 30px;
-    color: rgb(3, 59, 132);
+#result img {
+    width: 100px;
+    height: 100px;
 }
 
+#result h2 {
+    margin: 10px 0;
+}
